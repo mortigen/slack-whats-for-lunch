@@ -1,0 +1,55 @@
+{
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "Are you hungry?\n<@U024BE7LH> created lunch event!"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*Ming wok*\n *<www.pyszne.pl|www.pyszne.pl>*\n *Taking orders until:* 12:45 am\n"
+      },
+      "accessory": {
+        "type": "image",
+        "image_url": "https://i.pinimg.com/originals/fd/80/ec/fd80ecec48eba2a9adb76e4133905879.png",
+        "alt_text": "computer thumbnail"
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": ":game_die: *Ordering person will be drawn*"
+      }
+    },
+    {
+      "type": "actions",
+      "elements": [
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "emoji": true,
+            "text": "Add order"
+          },
+          "style": "primary",
+          "value": "click_me_123"
+        },
+        {
+          "type": "button",
+          "text": {
+            "type": "plain_text",
+            "emoji": true,
+            "text": "Finish taking orders"
+          },
+          "style": "danger",
+          "value": "click_me_123"
+        }
+      ]
+    }
+  ]
+}

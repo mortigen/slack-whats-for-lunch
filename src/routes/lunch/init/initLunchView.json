@@ -1,0 +1,161 @@
+{
+  "type": "modal",
+  "callback_id": "create-lunch",
+  "title": {
+    "type": "plain_text",
+    "text": "Create lunch"
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Submit"
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Cancel"
+  },
+  "blocks": [
+    {
+      "type": "input",
+      "block_id": "lunch-name",
+      "element": {
+        "type": "plain_text_input",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Restaurant name"
+        },
+        "action_id": "name"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": ":memo: Name lunch event",
+        "emoji": true
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "lunch-menu",
+      "optional": true,
+      "element": {
+        "type": "plain_text_input",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "https://www.restaurant-name.com/menu"
+        },
+        "action_id": "url"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": ":earth_americas: Provide menu url",
+        "emoji": true
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "collecting-orders-timeout",
+      "element": {
+        "type": "static_select",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select time value"
+        },
+        "action_id": "timeout",
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "5 minutes"
+            },
+            "value": "5"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "10 minutes"
+            },
+            "value": "10"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "15 minutes"
+            },
+            "value": "15"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "30 minutes"
+            },
+            "value": "30"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "45 minutes"
+            },
+            "value": "45"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "60 minutes"
+            },
+            "value": "60"
+          }
+        ],
+        "initial_option": {
+          "text": {
+            "type": "plain_text",
+            "text": "10 minutes"
+          },
+          "value": "10"
+        }
+      },
+      "label": {
+        "type": "plain_text",
+        "text": ":timer_clock: Time for making orders",
+        "emoji": true
+      }
+    },
+    {
+      "type": "input",
+      "block_id": "ordering-mode",
+      "element": {
+        "type": "static_select",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select time value"
+        },
+        "action_id": "mode",
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Draw"
+            },
+            "value": "draw"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "Me"
+            },
+            "value": "me"
+          }
+        ],
+        "initial_option": {
+          "text": {
+            "type": "plain_text",
+            "text": "Draw"
+          },
+          "value": "draw"
+        }
+      },
+      "label": {
+        "type": "plain_text",
+        "text": ":phone: Who will order food?",
+        "emoji": true
+      }
+    }
+  ]
+}
